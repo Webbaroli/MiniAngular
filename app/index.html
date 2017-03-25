@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+  <ul class="menu">
+    <li><a ui-sref="view1" translate>view 1</a></li>
+    <li><a ui-sref="view2" translate>view 2</a></li>
+  </ul>
+
+  <ui-view></ui-view>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+</body>
+</html>
